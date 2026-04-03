@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Menu, X } from 'lucide-react';
-import olusegunImage from '../img/Reverend Olusegun Babalola.jpg';
+// import olusegunImage from '../img/Reverend Olusegun Babalola.jpg';
 
 export function Header() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -19,12 +19,12 @@ export function Header() {
             <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex justify-between items-center h-16">
                     <div className="flex items-center gap-3 flex-shrink-0">
-                        <img
+                        {/* <img
                             src={olusegunImage}
                             alt="Olusegun Babalola"
                             className="h-10 w-10 rounded-full object-cover"
-                        />
-                        <span className="text-xl text-gray-900">Olusegun Babalola</span>
+                        /> */}
+                        <span className="text-3xl font-bold text-gray-900">Olusegun Babalola</span>
                     </div>
 
                     {/* Desktop Navigation */}

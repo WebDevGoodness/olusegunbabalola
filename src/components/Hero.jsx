@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import olusegunImage from '../img/Reverend Olusegun Babalola.jpg';
+
+import heroImage1 from '../img/Rev Hero 1.jpg';
+import heroImage2 from '../img/Rev Hero 2.jpg';
 
 
 export function Hero() {
@@ -7,12 +9,12 @@ export function Hero() {
 
     const slides = [
         {
-            image: "https://images.unsplash.com/photo-1622870912473-622dca067226?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjaHVyY2glMjB3b3JzaGlwJTIwc3VubGlnaHR8ZW58MXx8fHwxNjcwMTM0ODQ3fDA&ixlib=rb-4.1.0&q=80&w=1080",
+            image: heroImage2,
             title: "Welcome to My Ministry",
             subtitle: "Shepherding hearts, spreading hope, and serving God's kingdom"
         },
         {
-            image: "https://images.unsplash.com/photo-1438232992991-995b7058bbb3?ixlib=rb-4.1.0&auto=format&fit=crop&w=1080&q=80",
+            image: heroImage1,
             title: "Walking in Faith",
             subtitle: "Join us in a journey of spiritual growth and community"
         }
@@ -37,7 +39,7 @@ export function Hero() {
                         <img
                             src={slide.image}
                             alt={slide.title}
-                            className="w-full h-full object-cover"
+                            className="w-full h-min object-cover object-center"
                         />
                         <div className="absolute inset-0 bg-black opacity-50"></div>
                     </div>

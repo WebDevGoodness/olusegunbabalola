@@ -9,14 +9,14 @@ export function About() {
                 <div className="grid md:grid-cols-2 gap-12 items-center">
                     <div>
                         <h2 className="text-6xl mb-6 text-gray-900 font-bold">About Rev Olusegun</h2>
-                        <p className="text-gray-700 mb-4 text-xl">
-                            For over 20 years, I've had the privilege of serving God's people and sharing His Word. My calling is to guide believers in their spiritual journey, provide biblical teaching, and create a community where faith can flourish.
+                        <p className="text-gray-700 mb-4 text-xl tracking-tighter">
+                            Rev. Olusegun Babalola has been serving as the Senior Pastor of The Glad Tidings Baptist Church since 1997. With a deep passion for God's Word and a heart for pastoral care, he has led the congregation through seasons of tremendous growth and spiritual transformation.
                         </p>
-                        <p className="text-gray-700 mb-4 text-xl">
-                            I hold a Master of Divinity from Seminary College and have served in various ministry roles including youth pastor, associate pastor, and currently as senior pastor at Grace Community Church.
+                        <p className="text-gray-700 mb-4 text-xl tracking-tighter">
+                            He holds a Doctor of Divinity degree from the Nigerian Baptist Theological Seminary and has ministered in various capacities across Nigeria and internationally. His teaching ministry focuses on practical Christianity, family values, and developing strong biblical foundations.
                         </p>
-                        <p className="text-gray-700 text-xl">
-                            My passion is to make God's Word accessible and relevant to everyday life, helping people discover their purpose and grow in their relationship with Christ.
+                        <p className="text-gray-700 text-xl tracking-tighter">
+                            Under his leadership, the church has expanded its outreach programs, established several new ministries, and strengthened commitment to community service. Pastor Olusegun is married to Mrs. Babalola, and they are blessed with Four children.
                         </p>
                     </div>
                     <div className="relative h-96 md:h-full min-h-[400px]">

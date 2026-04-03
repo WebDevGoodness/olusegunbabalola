@@ -38,7 +38,7 @@ export function Ministry() {
                     {ministryAreas.map((area) => (
                         <div
                             key={area.title}
-                            className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow"
+                            className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow font-base"
                         >
                             <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
                                 <area.icon className="w-6 h-6 text-blue-600" />
