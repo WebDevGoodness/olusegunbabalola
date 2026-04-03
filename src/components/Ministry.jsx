@@ -28,8 +28,8 @@ export function Ministry() {
         <section id="ministry" className="py-20 px-4 sm:px-6 lg:px-8 bg-gray-50">
             <div className="max-w-7xl mx-auto">
                 <div className="text-center mb-16">
-                    <h2 className="text-4xl mb-4 text-gray-900">Ministry Focus</h2>
-                    <p className="text-gray-600 max-w-2xl mx-auto">
+                    <h2 className="text-6xl font-bold mb-4 text-gray-900">Ministry Focus</h2>
+                    <p className="text-gray-600 max-w-2xl mx-auto text-xl">
                         Called to Serve, equipped to Lead, committed to making Disciples
                     </p>
                 </div>

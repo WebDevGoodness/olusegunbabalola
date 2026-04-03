@@ -5,8 +5,8 @@ export function Contact() {
         <section id="contact" className="py-20 px-4 sm:px-6 lg:px-8">
             <div className="max-w-7xl mx-auto">
                 <div className="text-center mb-16">
-                    <h2 className="text-4xl mb-4 text-gray-900">Get in Touch</h2>
-                    <p className="text-gray-600 max-w-2xl mx-auto">
+                    <h2 className="text-5xl font-bold mb-4 text-gray-900">Get in Touch</h2>
+                    <p className="text-gray-600 max-w-2xl mx-auto text-xl">
                         Whether you need prayer, counseling, or have questions about faith, I'm here to help
                     </p>
                 </div>
@@ -19,7 +19,7 @@ export function Contact() {
                                     <Mail className="w-6 h-6 text-blue-600" />
                                 </div>
                                 <div>
-                                    <h3 className="text-lg mb-1 text-gray-900">Email</h3>
+                                    <h3 className="text-lg mb-1 text-gray-900 font-bold">Email</h3>
                                     <p className="text-gray-600">pastor.john@gracechurch.com</p>
                                 </div>
                             </div>
@@ -29,7 +29,7 @@ export function Contact() {
                                     <Phone className="w-6 h-6 text-blue-600" />
                                 </div>
                                 <div>
-                                    <h3 className="text-lg mb-1 text-gray-900">Phone</h3>
+                                    <h3 className="text-lg mb-1 text-gray-900 font-bold">Phone</h3>
                                     <p className="text-gray-600">(555) 123-4567</p>
                                 </div>
                             </div>
@@ -39,7 +39,7 @@ export function Contact() {
                                     <MapPin className="w-6 h-6 text-blue-600" />
                                 </div>
                                 <div>
-                                    <h3 className="text-lg mb-1 text-gray-900">Location</h3>
+                                    <h3 className="text-lg mb-1 text-gray-900 font-bold">Location</h3>
                                     <p className="text-gray-600">Grace Community Church<br />123 Faith Avenue<br />Springfield, ST 12345</p>
                                 </div>
                             </div>
@@ -57,7 +57,7 @@ export function Contact() {
                     <div>
                         <form className="space-y-6">
                             <div>
-                                <label htmlFor="name" className="block text-sm mb-2 text-gray-700">
+                                <label htmlFor="name" className="block text-sm mb-2 text-gray-700 font-bold">
                                     Name
                                 </label>
                                 <input
@@ -70,7 +70,7 @@ export function Contact() {
                             </div>
 
                             <div>
-                                <label htmlFor="email" className="block text-sm mb-2 text-gray-700">
+                                <label htmlFor="email" className="block text-sm mb-2 text-gray-700 font-bold">
                                     Email
                                 </label>
                                 <input
@@ -83,7 +83,7 @@ export function Contact() {
                             </div>
 
                             <div>
-                                <label htmlFor="subject" className="block text-sm mb-2 text-gray-700">
+                                <label htmlFor="subject" className="block text-sm mb-2 text-gray-700 font-bold">
                                     Subject
                                 </label>
                                 <input
@@ -96,8 +96,8 @@ export function Contact() {
                             </div>
 
                             <div>
-                                <label htmlFor="message" className="block text-sm mb-2 text-gray-700">
-                                    Message
+                                <label htmlFor="message" className="block text-sm mb-2 text-gray-700 font-bold">
+                                    Message/Prayer Request
                                 </label>
                                 <textarea
                                     id="message"
@@ -110,7 +110,7 @@ export function Contact() {
 
                             <button
                                 type="submit"
-                                className="w-full bg-blue-600 text-white py-3 rounded-lg hover:bg-blue-700 transition-colors"
+                                className="w-full bg-blue-600 text-white py-3 rounded-lg hover:bg-blue-700 transition-colors font-bold"
                             >
                                 Send Message
                             </button>

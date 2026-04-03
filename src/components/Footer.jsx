@@ -8,14 +8,14 @@ export function Footer() {
             <div className="max-w-7xl mx-auto">
                 <div className="grid md:grid-cols-4 gap-8 mb-8">
                     <div>
-                        <h3 className="text-xl mb-4">Olusegun Babalola</h3>
+                        <h3 className="text-xl mb-4 font-bold">Olusegun Babalola</h3>
                         <p className="text-gray-400">
                             Serving God's people with faithfulness, teaching His Word with clarity, and leading with love.
                         </p>
                     </div>
 
                     <div>
-                        <h3 className="text-xl mb-4">Quick Links</h3>
+                        <h3 className="text-xl mb-4 font-bold">Quick Links</h3>
                         <ul className="space-y-2">
                             <li>
                                 <a href="#daily-wisdom" className="text-gray-400 hover:text-white transition-colors">
@@ -46,7 +46,7 @@ export function Footer() {
                     </div>
 
                     <div>
-                        <h3 className="text-xl mb-4">Scripture</h3>
+                        <h3 className="text-xl mb-4 font-bold">Scripture</h3>
                         <blockquote className="text-gray-400 italic">
                             "For I know the plans I have for you," declares the Lord, "plans to prosper you and not to harm you, plans to give you hope and a future."
                             <footer className="text-sm mt-2 not-italic">— Jeremiah 29:11</footer>
@@ -54,7 +54,7 @@ export function Footer() {
                     </div>
 
                     <div>
-                        <h3 className="text-xl mb-4">Connect</h3>
+                        <h3 className="text-xl mb-4 font-bold">Connect</h3>
                         <div className="flex space-x-4">
                             <a href="https://facebook.com" className="text-gray-400 hover:text-white transition-colors" aria-label="Facebook" target="_blank" rel="noopener noreferrer">
                                 <Facebook className="w-6 h-6" />

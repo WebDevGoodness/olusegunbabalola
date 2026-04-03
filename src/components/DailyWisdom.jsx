@@ -10,7 +10,7 @@ export function DailyWisdom() {
     return (
         <section id="daily-wisdom" className="bg-blue-50 py-16 px-4 sm:px-6 lg:px-8">
             <div className="max-w-4xl mx-auto text-center">
-                <h2 className="text-2xl font-bold text-gray-900 mb-8">WISDOM NUGGET</h2>
+                <h2 className="text-6xl font-bold text-gray-900 mb-8">WISDOM NUGGET</h2>
                 <div className="bg-white p-8 rounded-2xl shadow-lg relative">
                     <div className="absolute top-4 left-4">
                         <Quote className="w-12 h-12 text-blue-100" />
