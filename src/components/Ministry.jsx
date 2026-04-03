@@ -30,7 +30,7 @@ export function Ministry() {
                 <div className="text-center mb-16">
                     <h2 className="text-4xl mb-4 text-gray-900">Ministry Focus</h2>
                     <p className="text-gray-600 max-w-2xl mx-auto">
-                        Called to serve, equipped to lead, committed to making disciples
+                        Called to Serve, equipped to Lead, committed to making Disciples
                     </p>
                 </div>
 
