@@ -73,7 +73,7 @@ export function Footer() {
                 </div>
 
                 <div className="border-t border-gray-800 pt-8 text-center text-gray-400">
-                    <p>&copy; {currentYear} Pastor John Anderson. All rights reserved.</p>
+                    <p>&copy; {currentYear} Olusegun Babalola. All rights reserved.</p>
                 </div>
             </div>
         </footer>

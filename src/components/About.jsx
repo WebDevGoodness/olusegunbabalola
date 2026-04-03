@@ -6,7 +6,7 @@ export function About() {
             <div className="max-w-7xl mx-auto">
                 <div className="grid md:grid-cols-2 gap-12 items-center">
                     <div>
-                        <h2 className="text-4xl mb-6 text-gray-900">About Pastor John</h2>
+                        <h2 className="text-4xl mb-6 text-gray-900">About Rev Olusegun</h2>
                         <p className="text-gray-700 mb-4">
                             For over 20 years, I've had the privilege of serving God's people and sharing His Word. My calling is to guide believers in their spiritual journey, provide biblical teaching, and create a community where faith can flourish.
                         </p>
