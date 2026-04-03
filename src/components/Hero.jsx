@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from 'react';
+import olusegunImage from '../img/Reverend Olusegun Babalola.jpg';
+
 
 export function Hero() {
     const [currentSlide, setCurrentSlide] = useState(0);
