@@ -39,22 +39,22 @@ export function Hero() {
                         <img
                             src={slide.image}
                             alt={slide.title}
-                            className="w-full h-min object-cover object-center"
+                            className="w-full h-full object-cover object-center"
                         />
                         <div className="absolute inset-0 bg-black opacity-50"></div>
                     </div>
 
-                    <div className="relative z-10 h-full flex items-center justify-center text-center text-white px-4">
-                        <div>
-                            <h1 className="text-5xl md:text-6xl lg:text-7xl text-white mb-6 font-bold">
+                    <div className="relative z-10 h-full flex items-center justify-center text-center text-white px-4 sm:px-6 md:px-8">
+                        <div className="w-full max-w-4xl">
+                            <h1 className="text-2xl sm:text-3xl md:text-5xl lg:text-6xl xl:text-7xl text-white mb-3 sm:mb-4 md:mb-6 font-bold leading-tight">
                                 {slide.title}
                             </h1>
-                            <p className="text-xl md:text-2xl text-white mb-8 max-w-2xl mx-auto">
+                            <p className="text-xs sm:text-sm md:text-lg lg:text-xl xl:text-2xl text-white mb-6 sm:mb-8 max-w-2xl mx-auto leading-relaxed">
                                 {slide.subtitle}
                             </p>
                             <a
                                 href="#contact"
-                                className="inline-block bg-blue-600 font-bold text-white px-8 py-3 rounded-lg hover:bg-blue-700 transition-colors"
+                                className="inline-block bg-blue-600 font-bold text-white px-4 sm:px-6 md:px-8 py-2 sm:py-3 rounded-lg hover:bg-blue-700 transition-colors text-sm sm:text-base"
                             >
                                 Get in Touch
                             </a>

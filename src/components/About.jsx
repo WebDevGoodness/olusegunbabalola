@@ -19,7 +19,7 @@ export function About() {
                             Under his leadership, the church has expanded its outreach programs, established several new ministries, and strengthened commitment to community service. Pastor Olusegun is married to Mrs. Babalola, and they are blessed with Four children.
                         </p>
                     </div>
-                    <div className="relative h-96 md:h-full min-h-[400px]">
+                    <div className="relative h-80 sm:h-96 md:h-[500px] lg:h-full min-h-[350px]">
                         <img
                             src={olusegunImage}
                             alt="Olusegun Babalola"
