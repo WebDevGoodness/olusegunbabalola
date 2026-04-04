@@ -50,7 +50,7 @@ export function Hero() {
                             <h1 className="text-2xl sm:text-3xl md:text-5xl lg:text-6xl xl:text-7xl text-white mb-3 sm:mb-4 md:mb-6 font-bold leading-tight">
                                 {slide.title}
                             </h1>
-                            <p className="text-xs sm:text-sm md:text-lg lg:text-xl xl:text-2xl text-white mb-6 sm:mb-8 max-w-2xl mx-auto leading-relaxed">
+                            <p className={`text-xs sm:text-sm md:text-lg lg:text-xl xl:text-2xl mb-6 sm:mb-8 max-w-2xl mx-auto leading-relaxed font-semibold ${index === 1 ? 'text-blue-600' : 'text-white'}`}>
                                 {slide.subtitle}
                             </p>
                             <a
