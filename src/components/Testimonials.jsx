@@ -1,4 +1,4 @@
-import { Quote } from 'lucide-react';
+import { Quote, User } from 'lucide-react';
 
 export function Testimonials() {
     const testimonials = [
@@ -37,9 +37,12 @@ export function Testimonials() {
                         >
                             <Quote className="w-8 h-8 text-blue-600 mb-4" />
                             <p className="text-gray-700 mb-6 italic">"{testimonial.text}"</p>
-                            <div>
-                                <div className="text-gray-900">{testimonial.name}</div>
-                                <div className="text-sm text-gray-500">{testimonial.role}</div>
+                            <div className="flex items-center gap-2">
+                                <User className="w-5 h-5 text-blue-600" />
+                                <div>
+                                    <div className="text-gray-900 font-semibold">{testimonial.name}</div>
+                                    <div className="text-sm text-gray-500">{testimonial.role}</div>
+                                </div>
                             </div>
                         </div>
                     ))}
