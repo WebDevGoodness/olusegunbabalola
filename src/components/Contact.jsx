@@ -11,50 +11,53 @@ export function Contact() {
                     </p>
                 </div>
 
+                <div className="grid md:grid-cols-2 gap-12 mb-8">
+                    <h2 className="text-3xl font-bold text-gray-900 text-center">Contact Information</h2>
+                    <h2 className="text-3xl font-bold text-gray-900 text-center">Send me a Message</h2>
+                </div>
+
                 <div className="grid md:grid-cols-2 gap-12">
-                    <div>
+                    <div className="flex flex-col justify-center">
                         <div className="space-y-6 mb-8">
-                            <div className="flex items-start gap-4">
-                                <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0">
-                                    <Mail className="w-6 h-6 text-blue-600" />
-                                </div>
-                                <div>
-                                    <h3 className="text-lg mb-1 text-gray-900 font-bold">Email</h3>
-                                    <p className="text-gray-600">info@thegladtidingsbaptist.org</p>
-                                </div>
-                            </div>
-
-                            <div className="flex items-start gap-4">
-                                <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0">
-                                    <Phone className="w-6 h-6 text-blue-600" />
-                                </div>
-                                <div>
-                                    <h3 className="text-lg mb-1 text-gray-900 font-bold">Phone</h3>
-                                    <p className="text-gray-600">(+234) 08033797256</p>
+                            <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+                                <div className="flex items-start gap-4">
+                                    <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                                        <Mail className="w-6 h-6 text-blue-600" />
+                                    </div>
+                                    <div>
+                                        <h3 className="text-2xl mb-2 text-gray-900 font-bold">Email</h3>
+                                        <p className="text-lg text-gray-600">info@thegladtidingsbaptist.org</p>
+                                    </div>
                                 </div>
                             </div>
 
-                            <div className="flex items-start gap-4">
-                                <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0">
-                                    <MapPin className="w-6 h-6 text-blue-600 " />
-                                </div>
-                                <div>
-                                    <h3 className="text-lg mb-1 text-gray-900 font-bold">Location</h3>
-                                    <p className="text-gray-600">The Glad Tidings Baptist Church<br />Papa Araromi,Randa Area<br />Ogbomoso, Oyo State, Nigeria</p>
+                            <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+                                <div className="flex items-start gap-4">
+                                    <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                                        <Phone className="w-6 h-6 text-blue-600" />
+                                    </div>
+                                    <div>
+                                        <h3 className="text-2xl mb-2 text-gray-900 font-bold">Phone</h3>
+                                        <p className="text-lg text-gray-600">(+234) 08033797256</p>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
 
-                        <div className="relative h-64 rounded-lg overflow-hidden">
-                            <img
-                                src="https://images.unsplash.com/photo-1671275558351-ea067b3e5853?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjb21tdW5pdHklMjBwcmF5ZXIlMjBoYW5kc3xlbnwxfHx8fDE3NjcwODUwOTZ8MA&ixlib=rb-4.1.0&q=80&w=1080"
-                                alt="Community prayer"
-                                className="w-full h-full object-cover"
-                            />
+                            <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+                                <div className="flex items-start gap-4">
+                                    <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                                        <MapPin className="w-6 h-6 text-blue-600 " />
+                                    </div>
+                                    <div>
+                                        <h3 className="text-2xl mb-2 text-gray-900 font-bold">Location</h3>
+                                        <p className="text-lg text-gray-600">The Glad Tidings Baptist Church<br />Papa Araromi,Randa Area<br />Ogbomoso, Oyo State, Nigeria</p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
 
-                    <div>
+                    <div className="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition-shadow">
                         <form className="space-y-6">
                             <div>
                                 <label htmlFor="name" className="block text-sm mb-2 text-gray-700 font-bold">
