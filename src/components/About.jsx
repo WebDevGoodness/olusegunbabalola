@@ -24,6 +24,7 @@ export function About() {
                             src={olusegunImage}
                             alt="Olusegun Babalola"
                             className="w-full h-full object-cover rounded-lg shadow-lg"
+                            loading="lazy"
                         />
                     </div>
                 </div>
