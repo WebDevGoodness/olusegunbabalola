@@ -64,6 +64,17 @@ export function Sermons() {
                         </div>
                     ))}
                 </div>
+
+                <div className="text-center mt-12">
+                    <a
+                        href="https://www.youtube.com/@tgtbcogbomoso"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-block bg-blue-600 text-white px-8 py-3 rounded-lg hover:bg-blue-700 transition-colors font-semibold text-lg"
+                    >
+                        View More Sermons on YouTube
+                    </a>
+                </div>
             </div>
         </section>
     );

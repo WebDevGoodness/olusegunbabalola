@@ -20,7 +20,7 @@ export function Contact() {
                                 </div>
                                 <div>
                                     <h3 className="text-lg mb-1 text-gray-900 font-bold">Email</h3>
-                                    <p className="text-gray-600">pastor.john@gracechurch.com</p>
+                                    <p className="text-gray-600">info@thegladtidingsbaptist.org</p>
                                 </div>
                             </div>
 
@@ -30,7 +30,7 @@ export function Contact() {
                                 </div>
                                 <div>
                                     <h3 className="text-lg mb-1 text-gray-900 font-bold">Phone</h3>
-                                    <p className="text-gray-600">(555) 123-4567</p>
+                                    <p className="text-gray-600">(+234) 08033797256</p>
                                 </div>
                             </div>
 
@@ -40,7 +40,7 @@ export function Contact() {
                                 </div>
                                 <div>
                                     <h3 className="text-lg mb-1 text-gray-900 font-bold">Location</h3>
-                                    <p className="text-gray-600">Grace Community Church<br />123 Faith Avenue<br />Springfield, ST 12345</p>
+                                    <p className="text-gray-600">The Glad Tidings Baptist Church<br />Papa Araromi,Randa Area<br />Ogbomoso, Oyo State, Nigeria</p>
                                 </div>
                             </div>
                         </div>
@@ -58,7 +58,7 @@ export function Contact() {
                         <form className="space-y-6">
                             <div>
                                 <label htmlFor="name" className="block text-sm mb-2 text-gray-700 font-bold">
-                                    Name
+                                    Name *
                                 </label>
                                 <input
                                     type="text"
@@ -71,7 +71,7 @@ export function Contact() {
 
                             <div>
                                 <label htmlFor="email" className="block text-sm mb-2 text-gray-700 font-bold">
-                                    Email
+                                    Email *
                                 </label>
                                 <input
                                     type="email"
@@ -84,7 +84,7 @@ export function Contact() {
 
                             <div>
                                 <label htmlFor="subject" className="block text-sm mb-2 text-gray-700 font-bold">
-                                    Subject
+                                    Subject *
                                 </label>
                                 <input
                                     type="text"
@@ -97,7 +97,7 @@ export function Contact() {
 
                             <div>
                                 <label htmlFor="message" className="block text-sm mb-2 text-gray-700 font-bold">
-                                    Message/Prayer Request
+                                    Message/Prayer Request *
                                 </label>
                                 <textarea
                                     id="message"
