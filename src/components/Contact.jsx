@@ -36,7 +36,7 @@ export function Contact() {
 
                             <div className="flex items-start gap-4">
                                 <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0">
-                                    <MapPin className="w-6 h-6 text-blue-600" />
+                                    <MapPin className="w-6 h-6 text-blue-600 " />
                                 </div>
                                 <div>
                                     <h3 className="text-lg mb-1 text-gray-900 font-bold">Location</h3>

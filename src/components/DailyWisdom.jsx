@@ -3,8 +3,8 @@ import { Quote } from 'lucide-react';
 export function DailyWisdom() {
     // This could come from an API or a larger list in the future
     const dailyVerse = {
-        text: "You're familiar with the command to the ancients, 'Do not muder'. I'm telling you that anyone who is so much as angry with a brother or sister is guilty of murder. Carelessly call a brother 'idiot!' and yiu just might find yourself hauled into court. Thoughtlessly yell 'studid!' at a sister and you are on the brink of hellfire.  The simple moral fact is that words kill. 'This is how i want you to conduct yourself in these matters. If you enter your place of worship and, abandon your offering, leave immediately, go to this friend and make things right. Then and only then, come back and work things out with God. 'Or say you're out on the street and an old enemy accosts you. Don't lose a minute. Make the first move; make things right with him. After all, if you leave the first move to him, knowing his track record, you're likely to end up in court, maybe evn in jail. If that happens, you won't get out without a stiff fine.",
-        reference: "Matthew 5: 21-26 MSG"
+        text: "Your boast becomes a prophecy of a future failure. The higher you lift yourself up in pride, the harder you’ll fall in disgrace. It’s better to be meek and lowly and live among the poor than to live high and mighty among the rich and famous. One skilled in business discovers prosperity, but the one who trusts in God is blessed beyond belief! The one with a wise heart is called “discerning,” and speaking sweetly to others makes your teaching even more convincing. Wisdom is a deep well of understanding opened up within you as a fountain of life for others, but it’s senseless to try to instruct a fool. Winsome words pour from a heart of wisdom, adding value to all you teach. Nothing is more appealing than speaking beautiful, life-giving words. For they release sweetness to our souls and inner healing to our spirits. Before every person there is a path that seems like the right one to take, but it leads straight to hell!",
+        reference: "Proverbs 16:18-25 TPT"
     };
 
     return (
