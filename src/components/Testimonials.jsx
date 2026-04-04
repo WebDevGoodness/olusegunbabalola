@@ -23,7 +23,7 @@ export function Testimonials() {
         <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gray-50">
             <div className="max-w-7xl mx-auto">
                 <div className="text-center mb-16">
-                    <h2 className="text-6xl mb-4 font-bold text-gray-900">Testimonials</h2>
+                    <h2 className="text-6xl mb-4 font-bold" style={{ color: '#0A2540' }}>Testimonials</h2>
                     <p className="text-gray-600 max-w-2xl mx-auto text-xl">
                         Lives transformed by God's grace
                     </p>
@@ -35,10 +35,10 @@ export function Testimonials() {
                             key={testimonial.name}
                             className="bg-white p-6 rounded-lg shadow-md"
                         >
-                            <Quote className="w-8 h-8 text-blue-600 mb-4" />
+                            <Quote className="w-8 h-8 mb-4" style={{ color: '#D4AF37' }} />
                             <p className="text-gray-700 mb-6 italic">"{testimonial.text}"</p>
                             <div className="flex items-center gap-2">
-                                <User className="w-5 h-5 text-blue-600" />
+                                <User className="w-5 h-5" style={{ color: '#D4AF37' }} />
                                 <div>
                                     <div className="text-gray-900 font-semibold">{testimonial.name}</div>
                                     <div className="text-sm text-gray-500">{testimonial.role}</div>

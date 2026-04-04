@@ -1,3 +1,60 @@
+:root {
+  --color-navy: #0a2540;
+  --color-navy-light: #1a3f5a;
+  --color-navy-dark: #051a2e;
+  --color-gold: #d4af37;
+  --color-gold-light: #e8d5a8;
+  --color-bg-warm: #f8f5f0;
+}
+
+* {
+  --tw-text-opacity: 1;
+}
+
+.bg-navy {
+  background-color: var(--color-navy);
+}
+
+.bg-navy-light {
+  background-color: var(--color-navy-light);
+}
+
+.bg-warm-off-white {
+  background-color: var(--color-bg-warm);
+}
+
+.bg-gold {
+  background-color: var(--color-gold);
+}
+
+.text-navy {
+  color: var(--color-navy);
+}
+
+.text-gold {
+  color: var(--color-gold);
+}
+
+.hover\:bg-navy:hover {
+  background-color: var(--color-navy);
+}
+
+.hover\:bg-navy-light:hover {
+  background-color: var(--color-navy-light);
+}
+
+.border-gold {
+  border-color: var(--color-gold);
+}
+
+.bg-navy-100 {
+  background-color: rgba(10, 37, 64, 0.1);
+}
+
+.bg-gold-100 {
+  background-color: rgba(212, 175, 55, 0.1);
+}
+
 .App {
   text-align: center;
 }

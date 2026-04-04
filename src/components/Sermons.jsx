@@ -36,7 +36,7 @@ export function Sermons() {
         <section id="sermons" className="py-20 px-4 sm:px-6 lg:px-8">
             <div className="max-w-7xl mx-auto">
                 <div className="text-center mb-16">
-                    <h2 className="text-6xl font-bold mb-4 text-gray-900">Recent Sermons</h2>
+                    <h2 className="text-6xl font-bold mb-4" style={{ color: '#0A2540' }}>Recent Sermons</h2>
                     <p className="text-gray-600 max-w-2xl mx-auto text-xl">
                         Messages from God's Word to encourage, challenge, and inspire
                     </p>
@@ -53,20 +53,20 @@ export function Sermons() {
                         >
                             <div className="p-6 h-full flex flex-col">
                                 <div className="flex items-start justify-between mb-4">
-                                    <span className="text-sm font-semibold text-blue-600 bg-blue-50 px-3 py-1 rounded-full">{sermon.series}</span>
-                                    <div className="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center group-hover:bg-blue-700 transition-colors">
+                                    <span className="text-sm font-semibold text-white px-3 py-1 rounded-full" style={{ backgroundColor: '#D4AF37', color: '#0A2540' }}>{sermon.series}</span>
+                                    <div className="w-12 h-12 rounded-full flex items-center justify-center group-hover:opacity-80 transition-opacity" style={{ backgroundColor: '#0A2540' }}>
                                         <Play className="w-6 h-6 text-white fill-white" />
                                     </div>
                                 </div>
-                                <h3 className="text-2xl font-bold mb-3 text-gray-900 group-hover:text-blue-600 transition-colors">{sermon.title}</h3>
+                                <h3 className="text-2xl font-bold mb-3 group-hover:opacity-70 transition-opacity" style={{ color: '#0A2540' }}>{sermon.title}</h3>
                                 <p className="text-gray-600 mb-6 flex-grow leading-relaxed">{sermon.description}</p>
                                 <div className="flex items-center gap-6 text-sm text-gray-500 border-t pt-4">
                                     <div className="flex items-center gap-2">
-                                        <Calendar className="w-4 h-4 text-blue-600" />
+                                        <Calendar className="w-4 h-4" style={{ color: '#D4AF37' }} />
                                         <span className="font-medium">{sermon.date}</span>
                                     </div>
                                     <div className="flex items-center gap-2">
-                                        <Clock className="w-4 h-4 text-blue-600" />
+                                        <Clock className="w-4 h-4" style={{ color: '#D4AF37' }} />
                                         <span className="font-medium">{sermon.duration}</span>
                                     </div>
                                 </div>
@@ -80,7 +80,10 @@ export function Sermons() {
                         href="https://www.youtube.com/@tgtbcogbomoso"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="inline-block bg-blue-600 text-white px-8 py-3 rounded-lg hover:bg-blue-700 transition-colors font-semibold text-lg"
+                        className="inline-block text-white px-8 py-3 rounded-lg transition-colors font-semibold text-lg"
+                        style={{ backgroundColor: '#0A2540' }}
+                        onMouseEnter={(e) => e.target.style.backgroundColor = '#051a2e'}
+                        onMouseLeave={(e) => e.target.style.backgroundColor = '#0A2540'}
                     >
                         View More Sermons on YouTube
                     </a>

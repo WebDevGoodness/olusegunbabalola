@@ -5,15 +5,15 @@ export function Contact() {
         <section id="contact" className="py-20 px-4 sm:px-6 lg:px-8">
             <div className="max-w-7xl mx-auto">
                 <div className="text-center mb-16">
-                    <h2 className="text-5xl font-bold mb-4 text-gray-900">Get in Touch</h2>
+                    <h2 className="text-5xl font-bold mb-4" style={{ color: '#0A2540' }}>Get in Touch</h2>
                     <p className="text-gray-600 max-w-2xl mx-auto text-xl">
                         Whether you need prayer, counseling, or have questions about faith, I'm here to help
                     </p>
                 </div>
 
                 <div className="grid md:grid-cols-2 gap-12 mb-8">
-                    <h2 className="text-3xl font-bold text-gray-900 text-center">Contact Information</h2>
-                    <h2 className="text-3xl font-bold text-gray-900 text-center">Send me a Message</h2>
+                    <h2 className="text-3xl font-bold text-center" style={{ color: '#0A2540' }}>Contact Information</h2>
+                    <h2 className="text-3xl font-bold text-center" style={{ color: '#0A2540' }}>Send me a Message</h2>
                 </div>
 
                 <div className="grid md:grid-cols-2 gap-12">
@@ -21,11 +21,11 @@ export function Contact() {
                         <div className="space-y-6 mb-8">
                             <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
                                 <div className="flex items-start gap-4">
-                                    <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0">
-                                        <Mail className="w-6 h-6 text-blue-600" />
+                                    <div className="w-12 h-12 rounded-lg flex items-center justify-center flex-shrink-0" style={{ backgroundColor: 'rgba(212, 175, 55, 0.1)' }}>
+                                        <Mail className="w-6 h-6" style={{ color: '#D4AF37' }} />
                                     </div>
                                     <div>
-                                        <h3 className="text-2xl mb-2 text-gray-900 font-bold">Email</h3>
+                                        <h3 className="text-2xl mb-2 font-bold" style={{ color: '#0A2540' }}>Email</h3>
                                         <p className="text-lg text-gray-600">info@thegladtidingsbaptist.org</p>
                                     </div>
                                 </div>
@@ -33,8 +33,8 @@ export function Contact() {
 
                             <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
                                 <div className="flex items-start gap-4">
-                                    <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0">
-                                        <Phone className="w-6 h-6 text-blue-600" />
+                                    <div className="w-12 h-12 rounded-lg flex items-center justify-center flex-shrink-0" style={{ backgroundColor: 'rgba(212, 175, 55, 0.1)' }}>
+                                        <Phone className="w-6 h-6" style={{ color: '#D4AF37' }} />
                                     </div>
                                     <div>
                                         <h3 className="text-2xl mb-2 text-gray-900 font-bold">Phone</h3>
@@ -45,8 +45,8 @@ export function Contact() {
 
                             <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
                                 <div className="flex items-start gap-4">
-                                    <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0">
-                                        <MapPin className="w-6 h-6 text-blue-600 " />
+                                    <div className="w-12 h-12 rounded-lg flex items-center justify-center flex-shrink-0" style={{ backgroundColor: 'rgba(212, 175, 55, 0.1)' }}>
+                                        <MapPin className="w-6 h-6" style={{ color: '#D4AF37' }} />
                                     </div>
                                     <div>
                                         <h3 className="text-2xl mb-2 text-gray-900 font-bold">Location</h3>
@@ -67,8 +67,11 @@ export function Contact() {
                                     type="text"
                                     id="name"
                                     name="name"
-                                    className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-transparent outline-none"
+                                    className="w-full px-4 py-2 border border-gray-300 rounded-lg outline-none transition-all"
                                     placeholder="Your name"
+                                    style={{ borderColor: '#D4AF37' }}
+                                    onFocus={(e) => e.target.style.borderColor = '#0A2540'}
+                                    onBlur={(e) => e.target.style.borderColor = '#D4AF37'}
                                 />
                             </div>
 
@@ -80,8 +83,11 @@ export function Contact() {
                                     type="email"
                                     id="email"
                                     name="email"
-                                    className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-transparent outline-none"
+                                    className="w-full px-4 py-2 border border-gray-300 rounded-lg outline-none transition-all"
                                     placeholder="your.email@example.com"
+                                    style={{ borderColor: '#D4AF37' }}
+                                    onFocus={(e) => e.target.style.borderColor = '#0A2540'}
+                                    onBlur={(e) => e.target.style.borderColor = '#D4AF37'}
                                 />
                             </div>
 
@@ -93,8 +99,11 @@ export function Contact() {
                                     type="text"
                                     id="subject"
                                     name="subject"
-                                    className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-transparent outline-none"
+                                    className="w-full px-4 py-2 border border-gray-300 rounded-lg outline-none transition-all"
                                     placeholder="How can I help?"
+                                    style={{ borderColor: '#D4AF37' }}
+                                    onFocus={(e) => e.target.style.borderColor = '#0A2540'}
+                                    onBlur={(e) => e.target.style.borderColor = '#D4AF37'}
                                 />
                             </div>
 
@@ -106,14 +115,20 @@ export function Contact() {
                                     id="message"
                                     name="message"
                                     rows={6}
-                                    className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-transparent outline-none resize-none"
+                                    className="w-full px-4 py-2 border border-gray-300 rounded-lg outline-none transition-all resize-none"
                                     placeholder="Share your thoughts or prayer requests..."
+                                    style={{ borderColor: '#D4AF37' }}
+                                    onFocus={(e) => e.target.style.borderColor = '#0A2540'}
+                                    onBlur={(e) => e.target.style.borderColor = '#D4AF37'}
                                 ></textarea>
                             </div>
 
                             <button
                                 type="submit"
-                                className="w-full bg-blue-600 text-white py-3 rounded-lg hover:bg-blue-700 transition-colors font-bold"
+                                className="w-full text-white py-3 rounded-lg transition-colors font-bold"
+                                style={{ backgroundColor: '#0A2540' }}
+                                onMouseEnter={(e) => e.target.style.backgroundColor = '#051a2e'}
+                                onMouseLeave={(e) => e.target.style.backgroundColor = '#0A2540'}
                             >
                                 Send Message
                             </button>

@@ -55,7 +55,10 @@ export function Hero() {
                             </p>
                             <a
                                 href="#contact"
-                                className="inline-block bg-blue-600 font-bold text-white px-4 sm:px-6 md:px-8 py-2 sm:py-3 rounded-lg hover:bg-blue-700 transition-colors text-sm sm:text-base"
+                                className="inline-block font-bold text-white px-4 sm:px-6 md:px-8 py-2 sm:py-3 rounded-lg transition-colors text-sm sm:text-base"
+                                style={{ backgroundColor: '#0A2540' }}
+                                onMouseEnter={(e) => e.target.style.backgroundColor = '#051a2e'}
+                                onMouseLeave={(e) => e.target.style.backgroundColor = '#0A2540'}
                             >
                                 Get in Touch
                             </a>

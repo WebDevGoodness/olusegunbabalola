@@ -8,17 +8,17 @@ export function DailyWisdom() {
     };
 
     return (
-        <section id="daily-wisdom" className="bg-blue-50 py-16 px-4 sm:px-6 lg:px-8">
+        <section id="daily-wisdom" className="py-16 px-4 sm:px-6 lg:px-8" style={{ backgroundColor: 'rgba(212, 175, 55, 0.1)' }}>
             <div className="max-w-4xl mx-auto text-center">
-                <h2 className="text-6xl font-bold text-gray-900 mb-8">WISDOM NUGGET</h2>
+                <h2 className="text-6xl font-bold mb-8" style={{ color: '#0A2540' }}>WISDOM NUGGET</h2>
                 <div className="bg-white p-8 rounded-2xl shadow-lg relative">
                     <div className="absolute top-4 left-4">
-                        <Quote className="w-12 h-12 text-blue-100" />
+                        <Quote className="w-12 h-12" style={{ color: 'rgba(212, 175, 55, 0.3)' }} />
                     </div>
                     <blockquote className="text-xl md:text-2xl text-gray-700 italic mb-6 relative z-10 pt-8">
                         "{dailyVerse.text}"
                     </blockquote>
-                    <cite className="text-blue-600 font-semibold not-italic text-lg">
+                    <cite className="font-semibold not-italic text-lg" style={{ color: '#D4AF37' }}>
                         — {dailyVerse.reference}
                     </cite>
                 </div>

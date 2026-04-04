@@ -15,12 +15,12 @@ export function Header() {
     ];
 
     return (
-        <header className="fixed top-0 left-0 right-0 bg-white shadow-sm z-50">
+        <header className="fixed top-0 left-0 right-0 bg-warm-off-white shadow-sm z-50" style={{ backgroundColor: '#F8F5F0' }}>
             <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex justify-between items-center h-16">
                     <div className="flex items-center gap-3 flex-shrink-0">
 
-                        <span className="text-3xl font-bold text-gray-900">Olusegun Babalola</span>
+                        <span className="text-3xl font-bold" style={{ color: '#0A2540' }}>Olusegun Babalola</span>
                     </div>
 
                     {/* Desktop Navigation */}
@@ -29,7 +29,10 @@ export function Header() {
                             <a
                                 key={item.label}
                                 href={item.href}
-                                className="text-gray-700 hover:text-blue-600 hover:underline underline-offset-4 transition-colors duration-300 font-medium"
+                                className="text-gray-700 hover:underline underline-offset-4 transition-colors duration-300 font-medium"
+                                style={{ color: '#0A2540' }}
+                                onMouseEnter={(e) => e.target.style.color = '#D4AF37'}
+                                onMouseLeave={(e) => e.target.style.color = '#0A2540'}
                             >
                                 {item.label}
                             </a>
@@ -43,9 +46,9 @@ export function Header() {
                         aria-label="Toggle menu"
                     >
                         {isMenuOpen ? (
-                            <X className="h-6 w-6 text-gray-700" />
+                            <X className="h-6 w-6" style={{ color: '#0A2540' }} />
                         ) : (
-                            <Menu className="h-6 w-6 text-gray-700" />
+                            <Menu className="h-6 w-6" style={{ color: '#0A2540' }} />
                         )}
                     </button>
                 </div>
@@ -57,7 +60,8 @@ export function Header() {
                             <a
                                 key={item.label}
                                 href={item.href}
-                                className="block py-2 text-gray-700 hover:text-blue-600 hover:underline underline-offset-2 transition-colors duration-300 font-medium"
+                                className="block py-2 text-gray-700 hover:underline underline-offset-2 transition-colors duration-300 font-medium"
+                                style={{ color: '#0A2540' }}
                                 onClick={() => setIsMenuOpen(false)}
                             >
                                 {item.label}

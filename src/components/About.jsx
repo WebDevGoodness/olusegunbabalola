@@ -8,7 +8,7 @@ export function About() {
             <div className="max-w-7xl mx-auto">
                 <div className="grid md:grid-cols-2 gap-12 items-center">
                     <div>
-                        <h2 className="text-6xl mb-6 text-gray-900 font-bold">About Rev Olusegun</h2>
+                        <h2 className="text-6xl mb-6 font-bold" style={{ color: '#0A2540' }}>About Rev Olusegun</h2>
                         <p className="text-gray-700 mb-4 text-xl tracking-tighter">
                             Rev. Olusegun Babalola has been serving as the Senior Pastor of The Glad Tidings Baptist Church since 1997. With a deep passion for God's Word and a heart for pastoral care, he has led the congregation through seasons of tremendous growth and spiritual transformation.
                         </p>
