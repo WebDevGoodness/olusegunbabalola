@@ -33,7 +33,7 @@ export function Header() {
                             <a
                                 key={item.label}
                                 href={item.href}
-                                className="text-gray-700 hover:text-blue-600 transition-colors"
+                                className="text-gray-700 hover:text-blue-600 hover:underline underline-offset-4 transition-colors duration-300 font-medium"
                             >
                                 {item.label}
                             </a>
@@ -61,7 +61,7 @@ export function Header() {
                             <a
                                 key={item.label}
                                 href={item.href}
-                                className="block py-2 text-gray-700 hover:text-blue-600 transition-colors"
+                                className="block py-2 text-gray-700 hover:text-blue-600 hover:underline underline-offset-2 transition-colors duration-300 font-medium"
                                 onClick={() => setIsMenuOpen(false)}
                             >
                                 {item.label}

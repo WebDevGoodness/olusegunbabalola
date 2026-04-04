@@ -10,13 +10,13 @@ export function Hero() {
     const slides = [
         {
             image: heroImage2,
-            title: "Welcome to My Ministry",
-            subtitle: "Shepherding hearts, spreading hope, and serving God's kingdom"
+            title: "Rev. Olusegun Babalola",
+            subtitle: "Senior Pastor | Teacher of God's Word | Servant Leader since 1997"
         },
         {
             image: heroImage1,
-            title: "Walking in Faith",
-            subtitle: "Join us in a journey of spiritual growth and community"
+            title: "Transforming Lives Through Faith",
+            subtitle: "Dedicated to biblical teaching, pastoral care, and building a thriving community rooted in Christ"
         }
     ];
 
@@ -54,7 +54,7 @@ export function Hero() {
                             </p>
                             <a
                                 href="#contact"
-                                className="inline-block bg-blue-600 text-white px-8 py-3 rounded-lg hover:bg-blue-700 transition-colors"
+                                className="inline-block bg-blue-600 font-bold text-white px-8 py-3 rounded-lg hover:bg-blue-700 transition-colors"
                             >
                                 Get in Touch
                             </a>
