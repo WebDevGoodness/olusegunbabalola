@@ -1,4 +1,4 @@
-import { Calendar, Clock } from 'lucide-react';
+import { Calendar, Clock, Play } from 'lucide-react';
 
 export function Sermons() {
     const sermons = [
@@ -44,24 +44,34 @@ export function Sermons() {
 
                 <div className="grid md:grid-cols-2 gap-8">
                     {sermons.map((sermon) => (
-                        <div
+                        <a
                             key={sermon.title}
-                            className="bg-white border border-gray-200 rounded-lg p-6 hover:shadow-lg transition-shadow"
+                            href="https://www.youtube.com/@tgtbcogbomoso"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="bg-white rounded-lg shadow-md hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 overflow-hidden cursor-pointer group"
                         >
-                            <div className="text-sm text-blue-600 mb-2">{sermon.series}</div>
-                            <h3 className="text-2xl mb-3 text-gray-900">{sermon.title}</h3>
-                            <p className="text-gray-600 mb-4">{sermon.description}</p>
-                            <div className="flex items-center gap-4 text-sm text-gray-500">
-                                <div className="flex items-center gap-1">
-                                    <Calendar className="w-4 h-4" />
-                                    <span>{sermon.date}</span>
+                            <div className="p-6 h-full flex flex-col">
+                                <div className="flex items-start justify-between mb-4">
+                                    <span className="text-sm font-semibold text-blue-600 bg-blue-50 px-3 py-1 rounded-full">{sermon.series}</span>
+                                    <div className="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center group-hover:bg-blue-700 transition-colors">
+                                        <Play className="w-6 h-6 text-white fill-white" />
+                                    </div>
                                 </div>
-                                <div className="flex items-center gap-1">
-                                    <Clock className="w-4 h-4" />
-                                    <span>{sermon.duration}</span>
+                                <h3 className="text-2xl font-bold mb-3 text-gray-900 group-hover:text-blue-600 transition-colors">{sermon.title}</h3>
+                                <p className="text-gray-600 mb-6 flex-grow leading-relaxed">{sermon.description}</p>
+                                <div className="flex items-center gap-6 text-sm text-gray-500 border-t pt-4">
+                                    <div className="flex items-center gap-2">
+                                        <Calendar className="w-4 h-4 text-blue-600" />
+                                        <span className="font-medium">{sermon.date}</span>
+                                    </div>
+                                    <div className="flex items-center gap-2">
+                                        <Clock className="w-4 h-4 text-blue-600" />
+                                        <span className="font-medium">{sermon.duration}</span>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
+                        </a>
                     ))}
                 </div>
 
