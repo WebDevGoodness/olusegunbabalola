@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 
-import heroImage1 from '../img/Rev Hero 1.jpg';
-import heroImage2 from '../img/Rev Hero 2.jpg';
+import heroImage1 from '../img/Rev Hero 1-desktop.jpg';
+import heroImage2 from '../img/Rev Hero 2-desktop.jpg';
 
 
 export function Hero() {
@@ -35,13 +35,14 @@ export function Hero() {
                     className={`absolute inset-0 transition-opacity duration-1000 ease-in-out ${index === currentSlide ? 'opacity-100' : 'opacity-0'
                         }`}
                 >
-                    <div className="absolute inset-0 z-0">
+                    <div className="absolute inset-0 z-0 bg-black">
                         <img
                             src={slide.image}
                             alt={slide.title}
-                            className="w-full h-full object-cover object-center"
+                            className="w-full h-full object-contain"
+                            loading="lazy"
+                            decoding="async"
                         />
-                        <div className="absolute inset-0 bg-black opacity-50"></div>
                     </div>
 
                     <div className="relative z-10 h-full flex items-center justify-center text-center text-white px-4 sm:px-6 md:px-8">
