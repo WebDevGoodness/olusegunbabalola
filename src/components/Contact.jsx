@@ -11,9 +11,8 @@ export function Contact() {
                     </p>
                 </div>
 
-                <div className="grid md:grid-cols-2 gap-12 mb-8">
-                    <h2 className="text-3xl font-bold text-center" style={{ color: '#0A2540' }}>Contact Information</h2>
-                    <h2 className="text-3xl font-bold text-center" style={{ color: '#0A2540' }}>Send me a Message</h2>
+                <div className="mb-8">
+                    <h2 className="text-3xl font-bold text-center md:text-left" style={{ color: '#0A2540' }}>Contact Information</h2>
                 </div>
 
                 <div className="grid md:grid-cols-2 gap-12">
@@ -58,6 +57,7 @@ export function Contact() {
                     </div>
 
                     <div className="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+                        <h2 className="text-3xl font-bold mb-8" style={{ color: '#0A2540' }}>Send me a Message</h2>
                         <form className="space-y-6">
                             <div>
                                 <label htmlFor="name" className="block text-sm mb-2 text-gray-700 font-bold">

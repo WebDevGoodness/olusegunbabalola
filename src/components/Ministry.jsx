@@ -38,7 +38,7 @@ export function Ministry() {
                     {ministryAreas.map((area) => (
                         <div
                             key={area.title}
-                            className="bg-white p-8 rounded-lg shadow-md hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 cursor-pointer font-base"
+                            className="bg-white p-8 rounded-lg shadow-md hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 font-base"
                         >
                             <div className="w-16 h-16 rounded-lg flex items-center justify-center mb-6" style={{ backgroundColor: 'rgba(212, 175, 55, 0.1)' }}>
                                 <area.icon className="w-8 h-8" style={{ color: '#D4AF37' }} />
