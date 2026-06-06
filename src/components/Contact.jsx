@@ -49,7 +49,7 @@ export function Contact() {
                                     </div>
                                     <div>
                                         <h3 className="text-2xl mb-2 text-gray-900 font-bold">Location</h3>
-                                        <p className="text-lg text-gray-600">The Glad Tidings Baptist Church<br />Papa Araromi,Randa Area<br />Ogbomoso, Oyo State, Nigeria</p>
+                                        <p className="text-lg text-gray-600">The Glad Tidings Baptist Church<br />Papa Araromi, Randa Area<br />Ogbomoso, Oyo State, Nigeria</p>
                                     </div>
                                 </div>
                             </div>
