@@ -24,11 +24,6 @@ const Sermons = lazy(() =>
     default: module.Sermons
   }))
 );
-const Testimonials = lazy(() =>
-  import('./components/Testimonials').then(module => ({
-    default: module.Testimonials
-  }))
-);
 const Contact = lazy(() =>
   import('./components/Contact').then(module => ({
     default: module.Contact
@@ -55,7 +50,6 @@ export default function App() {
           <About />
           <Ministry />
           <Sermons />
-          <Testimonials />
           <Contact />
         </Suspense>
       </main>
