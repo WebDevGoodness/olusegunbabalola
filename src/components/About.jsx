@@ -16,7 +16,7 @@ export function About() {
                             He holds a Master of Divinity degree from the Nigerian Baptist Theological Seminary and has ministered in various capacities across Nigeria and Internationally. His teaching ministry focuses on practical Christianity, Family values, and developing strong Biblical foundations.
                         </p>
                         <p className="text-gray-700 text-xl tracking-tighter">
-                            Under his leadership, the church has expanded its outreach programs, established several new ministries, and strengthened commitment to community service. Pastor Olusegun is married to Mrs. Babalola, and they are blessed with Four children.
+                            Under his leadership, the church has expanded its outreach programs, established several new ministries, and strengthened commitment to community service. Pastor Olusegun is married to Mrs. Racheal Babalola, and they are blessed with Four children.
                         </p>
                     </div>
                     <div className="relative h-80 sm:h-96 md:h-[500px] lg:h-full min-h-[350px]">
