@@ -13,7 +13,7 @@ export function About() {
                             Rev. Olusegun Babalola has been serving as the Senior Pastor of The Glad Tidings Baptist Church since 1997. With a deep passion for God's Word and a heart for pastoral care, he has led the congregation through seasons of tremendous growth and spiritual transformation.
                         </p>
                         <p className="text-gray-700 mb-4 text-xl tracking-tighter">
-                            He holds a Doctor of Divinity degree from the Nigerian Baptist Theological Seminary and has ministered in various capacities across Nigeria and internationally. His teaching ministry focuses on practical Christianity, family values, and developing strong biblical foundations.
+                            He holds a Master of Divinity degree from the Nigerian Baptist Theological Seminary and has ministered in various capacities across Nigeria and Internationally. His teaching ministry focuses on practical Christianity, Family values, and developing strong Biblical foundations.
                         </p>
                         <p className="text-gray-700 text-xl tracking-tighter">
                             Under his leadership, the church has expanded its outreach programs, established several new ministries, and strengthened commitment to community service. Pastor Olusegun is married to Mrs. Babalola, and they are blessed with Four children.
