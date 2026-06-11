@@ -13,7 +13,7 @@ export function Sermons() {
             title: 'The Power of Prayer',
             series: 'Spiritual Disciplines',
             date: 'December 17, 2024',
-            duration: '38 min',
+            duration: '37 min',
             description: 'Exploring the transformative impact of prayer and developing a deeper prayer life.',
         },
         {
