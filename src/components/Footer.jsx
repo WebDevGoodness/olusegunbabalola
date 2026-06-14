@@ -1,4 +1,4 @@
-import { Facebook, Twitter, Instagram, Youtube, Linkedin } from 'lucide-react';
+import { Instagram, Youtube, Linkedin } from 'lucide-react';
 
 export function Footer() {
     const currentYear = new Date().getFullYear();
@@ -68,9 +68,9 @@ export function Footer() {
                             <a href="https://www.linkedin.com/in/olusegun-babalola-322450b3/" className="text-gray-400 hover:transition-colors transition-colors" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer" style={{ color: '#D4AF37' }}>
                                 <Linkedin className="w-6 h-6" />
                             </a>
-                            {/* <a href="https://www.youtube.com/@tgtbcogbomoso" className="text-gray-400 hover:transition-colors transition-colors" aria-label="YouTube" target="_blank" rel="noopener noreferrer" style={{ color: '#D4AF37' }}>
+                            <a href="https://www.youtube.com/@tgtbcogbomoso" className="text-gray-400 hover:transition-colors transition-colors" aria-label="YouTube" target="_blank" rel="noopener noreferrer" style={{ color: '#D4AF37' }}>
                                 <Youtube className="w-6 h-6" />
-                            </a> */}
+                            </a>
                         </div>
                     </div>
                 </div>
