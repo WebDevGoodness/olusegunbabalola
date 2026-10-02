@@ -36,18 +36,18 @@ export function Hero() {
                         }`}
                 >
                     <div className="relative z-10 flex h-full items-center justify-center px-4 py-8 sm:px-6 md:px-8 md:py-12">
-                        <div className="flex h-[calc(100vh-4rem)] w-full max-w-6xl flex-col overflow-hidden rounded-2xl bg-white shadow-2xl md:h-[75%] md:min-h-[480px] md:flex-row">
-                            <div className="h-[55%] min-h-0 w-full bg-black md:h-full md:w-1/2">
+                        <div className="flex h-[calc(100vh-2rem)] w-full max-w-6xl flex-col overflow-hidden rounded-2xl bg-white shadow-2xl md:h-[75%] md:min-h-[480px] md:flex-row">
+                            <div className="h-[60%] min-h-0 w-full bg-black md:h-full md:w-1/2">
                                 <img
                                     src={slide.image}
                                     alt={slide.title}
-                                    className={`h-full w-full object-cover ${index === 0 ? 'object-[center_20%]' : 'object-[center_15%]'}`}
+                                    className={`h-full w-full object-contain md:object-cover ${index === 0 ? 'object-[center_20%]' : 'object-[center_15%]'}`}
                                     loading={index === 0 ? 'eager' : 'lazy'}
                                     decoding="async"
                                 />
                             </div>
 
-                            <div className="flex h-[45%] w-full flex-col items-center justify-center px-6 py-6 text-center text-navy sm:px-10 sm:py-8 md:h-full md:w-1/2 md:px-12 lg:px-16">
+                            <div className="flex h-[40%] w-full flex-col items-center justify-center px-6 py-5 text-center text-navy sm:px-10 sm:py-8 md:h-full md:w-1/2 md:px-12 lg:px-16">
                                 <h1 className="mb-3 text-2xl font-bold leading-tight sm:text-3xl md:mb-5 md:text-4xl lg:text-5xl">
                                     {slide.title}
                                 </h1>
