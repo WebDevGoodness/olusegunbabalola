@@ -28,40 +28,42 @@ export function Hero() {
     }, [slides.length]);
 
     return (
-        <section id="home" className="relative h-screen flex items-center justify-center overflow-hidden">
+        <section id="home" className="relative h-screen min-h-screen flex items-center justify-center overflow-hidden">
             {slides.map((slide, index) => (
                 <div
                     key={index}
                     className={`absolute inset-0 transition-opacity duration-1000 ease-in-out ${index === currentSlide ? 'opacity-100' : 'opacity-0'
                         }`}
                 >
-                    <div className="absolute inset-0 z-0 bg-black">
-                        <img
-                            src={slide.image}
-                            alt={slide.title}
-                            className="w-full h-full object-contain"
-                            loading="lazy"
-                            decoding="async"
-                        />
-                    </div>
+                    <div className="relative z-10 h-full flex items-center justify-center px-4 py-12 sm:px-6 md:px-8">
+                        <div className="flex h-full max-h-[680px] w-full max-w-6xl flex-col overflow-hidden rounded-2xl bg-white shadow-2xl md:h-[75%] md:min-h-[480px] md:flex-row">
+                            <div className="h-1/2 min-h-[260px] w-full bg-black md:h-full md:w-1/2">
+                                <img
+                                    src={slide.image}
+                                    alt={slide.title}
+                                    className={`h-full w-full object-cover ${index === 0 ? 'object-[center_20%]' : 'object-[center_15%]'}`}
+                                    loading={index === 0 ? 'eager' : 'lazy'}
+                                    decoding="async"
+                                />
+                            </div>
 
-                    <div className="relative z-10 h-full flex items-center justify-center text-center text-white px-4 sm:px-6 md:px-8">
-                        <div className="w-full max-w-4xl">
-                            <h1 className="text-2xl sm:text-3xl md:text-5xl lg:text-6xl xl:text-7xl text-white mb-3 sm:mb-4 md:mb-6 font-bold leading-tight">
-                                {slide.title}
-                            </h1>
-                            <p className={`text-xs sm:text-sm md:text-lg lg:text-xl xl:text-2xl mb-6 sm:mb-8 max-w-2xl mx-auto leading-relaxed font-semibold ${index === 1 ? 'text-blue-600' : 'text-white'}`}>
-                                {slide.subtitle}
-                            </p>
-                            <a
-                                href="#contact"
-                                className="inline-block font-bold text-white px-4 sm:px-6 md:px-8 py-2 sm:py-3 rounded-lg transition-colors text-sm sm:text-base"
-                                style={{ backgroundColor: '#0A2540' }}
-                                onMouseEnter={(e) => e.target.style.backgroundColor = '#051a2e'}
-                                onMouseLeave={(e) => e.target.style.backgroundColor = '#0A2540'}
-                            >
-                                Get in Touch
-                            </a>
+                            <div className="flex h-1/2 w-full flex-col items-center justify-center px-6 py-8 text-center text-navy sm:px-10 md:h-full md:w-1/2 md:px-12 lg:px-16">
+                                <h1 className="mb-3 text-2xl font-bold leading-tight sm:text-3xl md:mb-5 md:text-4xl lg:text-5xl">
+                                    {slide.title}
+                                </h1>
+                                <p className="mb-6 max-w-xl text-sm font-semibold leading-relaxed text-slate-600 sm:text-base md:mb-8 md:text-lg lg:text-xl">
+                                    {slide.subtitle}
+                                </p>
+                                <a
+                                    href="#contact"
+                                    className="inline-block rounded-lg px-5 py-2 text-sm font-bold text-white transition-colors sm:px-6 sm:py-3 sm:text-base"
+                                    style={{ backgroundColor: '#0A2540' }}
+                                    onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#051a2e'}
+                                    onMouseLeave={(e) => e.currentTarget.style.backgroundColor = '#0A2540'}
+                                >
+                                    Get in Touch
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -76,6 +78,7 @@ export function Hero() {
                             }`}
                         aria-label={`Go to slide ${index + 1}`}
                         aria-current={index === currentSlide}
+                        onClick={() => setCurrentSlide(index)}
                     />
                 ))}
             </div>
