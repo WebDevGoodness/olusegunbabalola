@@ -36,7 +36,7 @@ export function Hero() {
                         }`}
                 >
                     <div className="relative z-10 flex h-full items-center justify-center px-4 py-8 sm:px-6 md:px-8 md:py-12">
-                        <div className="flex h-[calc(100vh-2rem)] w-full max-w-6xl flex-col overflow-hidden rounded-2xl bg-white shadow-2xl md:h-[75%] md:min-h-[480px] md:flex-row">
+                        <div className="flex h-[calc(100vh-2rem)] w-full max-w-6xl flex-col overflow-hidden rounded-2xl bg-white shadow-2xl md:h-[85%] md:min-h-[480px] md:flex-row">
                             <div className="h-[60%] min-h-0 w-full bg-black md:h-full md:w-1/2">
                                 <img
                                     src={slide.image}
