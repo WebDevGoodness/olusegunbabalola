@@ -1,11 +1,45 @@
+import { useEffect, useState } from 'react';
 import { Quote } from 'lucide-react';
+import { apiRequest } from '../services/api';
 
 export function DailyWisdom() {
-    // This could come from an API or a larger list in the future
-    const dailyVerse = {
-        text: "Your boast becomes a prophecy of a future failure. The higher you lift yourself up in pride, the harder you’ll fall in disgrace. It’s better to be meek and lowly and live among the poor than to live high and mighty among the rich and famous. One skilled in business discovers prosperity, but the one who trusts in God is blessed beyond belief! The one with a wise heart is called “discerning,” and speaking sweetly to others makes your teaching even more convincing. Wisdom is a deep well of understanding opened up within you as a fountain of life for others, but it’s senseless to try to instruct a fool. Winsome words pour from a heart of wisdom, adding value to all you teach. Nothing is more appealing than speaking beautiful, life-giving words. For they release sweetness to our souls and inner healing to our spirits. Before every person there is a path that seems like the right one to take, but it leads straight to hell!",
-        reference: "Proverbs 16:18-25 TPT"
+
+    const [nuggets, setNuggets] = useState([]);
+    const [currentIndex, setCurrentIndex] = useState(0);
+    const [loading, setLoading] = useState(true);
+    const [error, setError] = useState('');
+
+    const handlePrevious = () => {
+        setCurrentIndex((prev) => prev + 1);
     };
+
+    const handleNext = () => {
+        setCurrentIndex((prev) => prev - 1);
+    };
+
+    const dailyVerse = nuggets[currentIndex];
+
+    useEffect(() => {
+    const fetchDailyWisdom = async () => {
+        try {
+            const data = await apiRequest('/wisdom-nuggets');
+
+            if (data.nuggets && data.nuggets.length > 0) {
+                setNuggets(data.nuggets);
+                setCurrentIndex(0);
+            }
+        } catch (err) {
+            setError(err.message);
+        } finally {
+            setLoading(false);
+        }
+    };
+
+    fetchDailyWisdom();
+}, []);
+
+    // This could come from an API or a larger list in the future
+    
 
     return (
         <section id="daily-wisdom" className="py-16 px-4 sm:px-6 lg:px-8" style={{ backgroundColor: 'rgba(212, 175, 55, 0.1)' }}>
@@ -15,12 +49,55 @@ export function DailyWisdom() {
                     <div className="absolute top-4 left-4">
                         <Quote className="w-12 h-12" style={{ color: 'rgba(212, 175, 55, 0.3)' }} />
                     </div>
-                    <blockquote className="text-xl md:text-2xl text-gray-700 italic mb-6 relative z-10 pt-8">
-                        "{dailyVerse.text}"
-                    </blockquote>
-                    <cite className="font-semibold not-italic text-lg" style={{ color: '#D4AF37' }}>
-                        — {dailyVerse.reference}
-                    </cite>
+                    {loading ? (
+                        <p className="text-gray-500 pt-8">
+                            Loading wisdom nugget...
+                        </p>
+                    ) : error ? (
+                        <p className="text-red-500 pt-8">
+                            Unable to load wisdom nugget.
+                        </p>
+                    ) : dailyVerse ? (
+                        <>
+                            <blockquote className="text-xl md:text-2xl text-gray-700 italic mb-6 relative z-10 pt-8">
+                                "{dailyVerse.content}"
+                            </blockquote>
+
+                            <cite className="font-semibold not-italic text-lg" style={{ color: '#D4AF37' }}>
+                                — {dailyVerse.reference}
+                            </cite>
+
+                            <p className="text-gray-500 text-sm mt-3">
+                                {new Date(dailyVerse.date || dailyVerse.createdAt).toLocaleDateString('en-US', {
+                                    year: 'numeric',
+                                    month: 'long',
+                                    day: 'numeric',
+                                })}
+                            </p>
+
+                            <div className="flex justify-center gap-6 mt-6">
+                                <button
+                                    onClick={handlePrevious}
+                                    disabled={currentIndex >= nuggets.length - 1}
+                                    className="px-5 py-2 rounded-lg bg-gray-200 hover:bg-gray-300 disabled:opacity-40 disabled:cursor-not-allowed"
+                                >
+                                    ← Previous
+                                </button>
+
+                                <button
+                                    onClick={handleNext}
+                                    disabled={currentIndex === 0}
+                                    className="px-5 py-2 rounded-lg bg-gray-200 hover:bg-gray-300 disabled:opacity-40 disabled:cursor-not-allowed"
+                                >
+                                    Next →
+                                </button>
+                            </div>
+                        </>
+                    ) : (
+                        <p className="text-gray-500 pt-8">
+                            No wisdom nugget available at the moment.
+                        </p>
+                    )}
                 </div>
             </div>
         </section>
