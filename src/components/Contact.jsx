@@ -89,7 +89,7 @@ export function Contact() {
                                     </div>
                                     <div>
                                         <h3 className="text-2xl mb-2 text-gray-900 font-bold">Phone</h3>
-                                        <p className="text-lg text-gray-600">(+234) 08033797256</p>
+                                        <p className="text-lg text-gray-600">(+234) 0814 745 9218</p>
                                     </div>
                                 </div>
                             </div>
