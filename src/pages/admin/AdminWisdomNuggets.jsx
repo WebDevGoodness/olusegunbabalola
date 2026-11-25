@@ -42,6 +42,7 @@ function AdminWisdomNuggets() {
                 body: JSON.stringify({
                     content,
                     reference,
+                    date,
                 }),
             });
 
